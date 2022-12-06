@@ -27,9 +27,7 @@ chrome.storage.local.get("count", function(data) {
         findPassID("password")
         findPassID("reg-password")
         findPassID("ap_password")
-
-
-
+        findPassID("current-password")
     }
   });
   
@@ -59,7 +57,8 @@ chrome.storage.local.get("count", function(data) {
 
         findUserID("email");
         findUserID("username");
-
+        findUserID("modalusername");
+        
 
     }
   });

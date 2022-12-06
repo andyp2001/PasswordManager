@@ -27,8 +27,7 @@ chrome.storage.local.get("count3", function(data) {
         findPassID("password")
         findPassID("reg-password")
         findPassID("ap_password")
-
-
+        findPassID("current-password")
 
     }
   });

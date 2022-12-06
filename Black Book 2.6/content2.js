@@ -28,11 +28,13 @@
 
 
 //verifying if content can be retrieved from website 
+usernameID("modalusername", '');
 usernameID("email", '');
 usernameID("username", '');
 passID("password", '');
 passID("ap_password",'');
 passID("reg-password",'');
+passID("current-password",'')
 
 
 
