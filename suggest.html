@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            body {background-color: #f7bf50;}
+        </style>
+    
+    <style>
+        .button {
+          background-color: black;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        </style>
+    </head>
+<body>
+
+
+    <h2>Get a Suggested Password</h2>
+<input type="button" class="button" id="id_suggest" value="Suggest a Password">&nbsp;
+<button class="button" id="click2">Back</button>
+<pre id="json"></pre>
+Password:<pre id="result"></pre>
+<button class="button" id="hide">Show/Hide Result</button>
+
+<script type="module" src="suggest.js"></script>
+
+
+</body>
+</html>

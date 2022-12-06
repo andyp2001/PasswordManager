@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            body {background-color: #f7bf50;}
+        </style>
+
+        <!--Obtained style from -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+
+
+    <style>
+        .button {
+          background-color: black;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        </style>
+    </head>
+<body>
+
+
+    <!--https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-refresh-->
+    <i class="fa fa-refresh" style="font-size:24px" id="refresh"></i>
+    <h2>Get History of Credentials!</h2>
+
+    <!-- In case we would want to make a button to open DB manually 
+<input type="button" id="id_openDB" value="Open Database"><br><br>
+//-->
+
+
+ID&nbsp;<input type="text" id="id_id", size=10>&nbsp;
+<p>Password&nbsp;<input type="password" id="id_password", size=10>&nbsp;</p>
+<input type="button" class="button" id="id_add" value="Add Credentials"><br><br>
+<input type="button" class="button" id="id_get" value="Get Individual ID History">&nbsp;
+<input type="button" class="button" id="id_getAll" value="Get Full History"><br>
+<button class="button" id="click2">Back</button>
+
+<pre id="json"></pre>
+<pre id="result"></pre>
+
+<script src="dbScript.js">
+</script>
+
+</body>
+</html>
