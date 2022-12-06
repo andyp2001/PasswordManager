@@ -1,0 +1,34 @@
+{
+    "manifest_version": 2,
+ 
+    "name": "Black Book 2.0", 
+    "description": "Password Management Tool",
+    "version": "2.0",
+    "author": "Error 404",
+    "options_page": "options.html",
+    "browser_action": {
+        "default_icon": {
+            "16": "/images/Black_Book-16.png",
+            "32": "/images/Black_Book-32.png",
+            "48": "/images/Black_Book-48.png",
+            "128": "/images/Black_Book-128.png"
+          },
+        "default_popup": "popup.html",
+        "default_title": "Black Book"
+    },
+    "icons": {
+        "16": "/images/Black_Book-16.png",
+        "32": "/images/Black_Book-32.png",
+        "48": "/images/Black_Book-48.png",
+        "128": "/images/Black_Book-128.png"
+      },
+      "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+        }
+    ],
+    "permissions": ["declarativeContent", 
+        "activeTab", "storage", "tabs"
+     ]
+}
